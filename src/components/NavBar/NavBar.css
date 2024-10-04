@@ -1,0 +1,27 @@
+.nav-bar {
+  width: 100%;
+  background-color: #1b1b1b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.nav-bar__list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar__item {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.nav-bar__link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar__socials {
+  margin-left: auto;
+}

@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: SF Pro, 'Segio UI', 'Roboto', 'Arial', sans-serif;
+}

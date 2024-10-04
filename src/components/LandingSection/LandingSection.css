@@ -1,0 +1,19 @@
+.header {
+  background-color: #243b5d;
+  color: #fff;
+  text-align: center;
+  padding: 6rem;
+}
+
+.header__image {
+  height: 18rem;
+  border-radius: 50%;
+}
+
+.header__name {
+  margin: 1rem 0 2rem 0;
+}
+
+.header__title {
+  font-size: 3rem;
+}
