@@ -41,10 +41,7 @@
   color: black;
   text-decoration: none;
   font-weight: 500;
+  display: flex;
+  gap: 5px;
 }
 
-.project-section__link img {
-  height: 1rem;
-  width: 1rem;
-  margin-left: 0.5rem;
-}

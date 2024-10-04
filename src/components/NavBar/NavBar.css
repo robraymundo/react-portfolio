@@ -2,19 +2,19 @@
   width: 100%;
   background-color: #1b1b1b;
   position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
 }
 
 .nav-bar__list {
+  margin-left: 20px;
   list-style: none;
   display: flex;
 }
 
 .nav-bar__item {
-  display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-bar__link {
@@ -23,5 +23,10 @@
 }
 
 .nav-bar__socials {
-  margin-left: auto;
+  padding: 15px 0 15px 0;
+  margin: 0 40px 0 auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
 }

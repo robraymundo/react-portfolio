@@ -1,5 +1,6 @@
 import "./ProjectSection.css";
-import Arrow from "../../assets/icons/box-arrow.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectSection() {
   const projects = [
@@ -36,8 +37,8 @@ function ProjectSection() {
               <h1 className="project-section__title">{project.title}</h1>
               <p className="project-section__description">{project.description}</p>
               <a className="project-section__link" href="#">
-                See more
-                <img src={Arrow}/>
+                <p>See more</p>
+                <FontAwesomeIcon icon={ faArrowRightLong } size="lg"/>
               </a>
             </div>
           </div>
