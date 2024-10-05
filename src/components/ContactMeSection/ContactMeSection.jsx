@@ -14,7 +14,7 @@ function ContactMeSection() {
   };
 
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact">
       <form className="contact-section__form" onSubmit={handleSubmit}>
         <h1 className="contact-section__heading">Contact me</h1>
         <input
@@ -24,6 +24,7 @@ function ContactMeSection() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Name"
+          required
         />
 
         <input
@@ -33,6 +34,7 @@ function ContactMeSection() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
+          required
         />
 
         <textarea
@@ -41,6 +43,7 @@ function ContactMeSection() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Message"
+          required
         />
 
         <button className="contact-section__button" type="submit">Submit</button>
