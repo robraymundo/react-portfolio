@@ -30,7 +30,7 @@ function NavBar() {
     <nav className={`nav-bar ${showNav ? 'nav-bar--visible' : 'nav-bar--hidden'}`}>
       <ul className="nav-bar__list">
         <li className="nav-bar__item">
-          <a className="nav-bar__link" href="#">Home</a>
+          <a className="nav-bar__link" href="#home">Home</a>
         </li>
         <li className="nav-bar__item">
           <a className="nav-bar__link" href="#projects">Projects</a>
