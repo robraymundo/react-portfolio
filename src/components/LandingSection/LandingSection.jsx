@@ -1,7 +1,7 @@
-import Logo from "../../assets/profile_picture.jpg";
 import "./LandingSection.css";
 
 function Header() {
+  const Logo = "/profile_picture.jpg";
   return (
     <header className="header">
       <img src={Logo} alt="profile" className="header__image"/>
