@@ -1,10 +1,26 @@
 import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGit } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { useState, useEffect } from 'react';
+
+const socialMediaLinks = [
+  {
+    icon: faFacebook,
+    link: "https://www.facebook.com/Robbbnn"
+  },
+  {
+    icon: faGithub,
+    link: "https://github.com/robraymundo"
+  },
+  {
+    icon: faLinkedin,
+    link: "https://www.linkedin.com/in/robin-raymundo-bb6003271/"
+  },
+  {
+    icon: faInstagram,
+    link: "https://www.instagram.com/"
+  }
+]
 
 function NavBar() {
   const [showNav, setShowNav] = useState(true);
@@ -41,26 +57,13 @@ function NavBar() {
       </ul>
 
       <ul className="nav-bar__socials">
-        <li className="nav-bar__social-item">
-          <a className="nav-bar__link" href="https://www.facebook.com/Robbbnn" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebook} size="xl" inverse/>
-          </a>
-        </li>
-        <li className="nav-bar__social-item">
-          <a className="nav-bar__link" href="https://github.com/robraymundo" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} size="xl" inverse/>
-          </a>
-        </li>
-        <li className="nav-bar__social-item">
-          <a className="nav-bar__link" href="https://www.linkedin.com/in/robin-raymundo-bb6003271/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="xl" inverse/>
-          </a>
-        </li>
-        <li className="nav-bar__social-item">
-          <a className="nav-bar__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} size="xl" inverse/>
-          </a>
-        </li>
+        {socialMediaLinks.map(({ icon, link }, index) => (
+          <li className="nav-bar__social-item" key={index}>
+            <a className="nav-bar__link" href={link} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={icon} size="xl" inverse/>
+            </a>
+          </li>
+          ))}
       </ul>
     </nav>
   );
