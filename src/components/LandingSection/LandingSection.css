@@ -3,6 +3,7 @@
   color: #fff;
   text-align: center;
   padding: 6rem;
+  padding-top: calc(6rem + 60px); /* Add extra padding for navbar */
 }
 
 .header__image {
@@ -16,4 +17,19 @@
 
 .header__title {
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 4rem 1rem;
+    padding-top: calc(3rem + 200px); /* Increase padding for expanded mobile navbar */
+  }
+
+  .header__image {
+    height: 12rem;
+  }
+
+  .header__title {
+    font-size: 1.8rem;
+  }
 }
