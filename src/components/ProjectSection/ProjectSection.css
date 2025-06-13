@@ -45,3 +45,17 @@
   gap: 5px;
 }
 
+@media screen and (max-width: 768px) {
+  .project-section {
+    padding: 30px 20px 50px 20px;
+  }
+
+  .project-section__content {
+    grid-template-columns: 1fr;
+  }
+
+  .project-section__image {
+    height: 200px;
+  }
+}
+
