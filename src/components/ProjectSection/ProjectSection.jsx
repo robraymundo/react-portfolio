@@ -4,6 +4,12 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 const projects = [
   {
+    title: "Melodify: Next",
+    description: "Modern music player built with PySide6, offering a seamless and personalized listening experience.",
+    imageSource: "/thumbnails/music_player.png",
+    link: "https://github.com/robraymundo/melodify-next"
+  },
+  {
     title: "Calculator",
     description: "A simple calculator app built with Python's Tkinter library. It supports basic arithmetic operations. ",
     imageSource: "/thumbnails/calculator.jpg", 
@@ -14,12 +20,6 @@ const projects = [
     description: "A simulation game where you can spawn a paper, rock or scissor. The last standing team wins.",
     imageSource: "/thumbnails/dividers.png",
     link: "https://github.com/robraymundo/dividers"
-  },
-  {
-    title: "Music Player",
-    description: "Simple music player created in Python with Tkinter library that offers simple features like play, pause and stop.",
-    imageSource: "/thumbnails/music_player.jpg",
-    link: "https://github.com/robraymundo/music-player"
   },
   {
     title: "PyDino",
